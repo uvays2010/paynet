@@ -1,0 +1,164 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  position: relative;
+  white-space: nowrap;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn--sm { padding: 8px 14px; font-size: 13px; }
+.btn--md { padding: 12px 20px; font-size: 15px; }
+.btn--lg { padding: 16px 28px; font-size: 16px; }
+
+.btn--full { width: 100%; }
+
+.btn--primary {
+  background: var(--primary);
+  color: white;
+}
+.btn--primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--secondary {
+  background: var(--bg-secondary);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn--secondary:hover:not(:disabled) {
+  background: var(--bg-tertiary);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+}
+.btn--outline:hover:not(:disabled) {
+  background: var(--primary-light);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+.btn--ghost:hover:not(:disabled) {
+  background: var(--bg-secondary);
+  color: var(--text);
+}
+
+.btn--danger {
+  background: var(--danger);
+  color: white;
+}
+.btn--danger:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+.btn__spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  position: absolute;
+}
+
+.btn__content--hidden {
+  visibility: hidden;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.btn {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.btn--primary:hover:not(:disabled) {
+  box-shadow: 0 8px 20px rgba(0, 166, 81, 0.3);
+}
+.btn__spinner {
+  animation: spin 0.7s linear infinite;
+}
+
+/* Design upgrade */
+.btn {
+  border-radius: 12px !important;
+  letter-spacing: -0.01em;
+  font-weight: 650;
+}
+.btn--primary {
+  background: linear-gradient(135deg, #00A651 0%, #059669 100%) !important;
+  box-shadow: 0 4px 14px rgba(0, 166, 81, 0.25);
+}
+.btn--primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #009B4A 0%, #047857 100%) !important;
+  box-shadow: var(--shadow-primary) !important;
+  transform: translateY(-2px);
+}
+.btn--outline {
+  border-width: 1.5px !important;
+  border-radius: 12px !important;
+}
+.btn--outline:hover:not(:disabled) {
+  background: var(--primary-soft) !important;
+  transform: translateY(-1px);
+}
+.btn--secondary {
+  border-radius: 12px !important;
+  background: white !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow-sm);
+}
+.btn--secondary:hover:not(:disabled) {
+  border-color: var(--border-strong) !important;
+  box-shadow: var(--shadow);
+}
+.btn--lg {
+  padding: 15px 28px !important;
+  border-radius: 14px !important;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, #00A651 0%, #10B981 50%, #059669 100%) !important;
+  background-size: 200% 200% !important;
+  animation: gradientShift 5s ease infinite !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 20px rgba(0, 166, 81, 0.3), inset 0 1px 0 rgba(255,255,255,0.2) !important;
+  font-weight: 700 !important;
+}
+.btn--primary:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 0 12px 32px rgba(0, 166, 81, 0.4) !important;
+}
+.btn--outline {
+  border: 2px solid #00A651 !important;
+  border-radius: 14px !important;
+  font-weight: 700 !important;
+}
+.btn--outline:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(0,166,81,0.1), rgba(16,185,129,0.05)) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 166, 81, 0.15);
+}
+.btn--lg {
+  padding: 16px 32px !important;
+  font-size: 16px !important;
+  border-radius: 16px !important;
+}

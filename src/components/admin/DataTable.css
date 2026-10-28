@@ -1,0 +1,173 @@
+.dt-wrap { overflow-x: auto; }
+.dt {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.dt th {
+  text-align: left;
+  padding: 12px 14px;
+  font-weight: 600;
+  color: #94A3B8;
+  border-bottom: 1px solid #334155;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.dt td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #1E293B;
+  color: #E2E8F0;
+}
+.dt tr:hover td {
+  background: rgba(51, 65, 85, 0.4);
+}
+.dt-empty {
+  text-align: center;
+  padding: 48px;
+  color: #64748B;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.badge--green { background: rgba(0,166,81,0.2); color: #34D399; }
+.badge--red { background: rgba(239,68,68,0.2); color: #F87171; }
+.badge--yellow { background: rgba(245,158,11,0.2); color: #FBBF24; }
+.badge--blue { background: rgba(59,130,246,0.2); color: #60A5FA; }
+.badge--gray { background: rgba(100,116,139,0.3); color: #94A3B8; }
+
+.admin-toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.admin-toolbar input,
+.admin-toolbar select {
+  background: #1E293B;
+  border: 1px solid #334155;
+  color: #E2E8F0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+}
+.admin-toolbar input:focus,
+.admin-toolbar select:focus {
+  border-color: #00A651;
+}
+.admin-toolbar input { min-width: 220px; flex: 1; }
+.admin-card {
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.admin-actions {
+  display: flex;
+  gap: 6px;
+}
+.admin-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.15s;
+}
+.admin-btn--primary { background: #00A651; color: white; }
+.admin-btn--primary:hover { background: #009B4A; }
+.admin-btn--ghost { background: #334155; color: #E2E8F0; }
+.admin-btn--ghost:hover { background: #475569; }
+.admin-btn--danger { background: rgba(239,68,68,0.2); color: #F87171; }
+.admin-btn--danger:hover { background: rgba(239,68,68,0.35); }
+.admin-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-top: 1px solid #334155;
+  font-size: 13px;
+  color: #94A3B8;
+}
+.admin-pagination button {
+  padding: 6px 14px;
+  background: #334155;
+  color: #E2E8F0;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin-pagination button:disabled { opacity: 0.4; cursor: not-allowed; }
+.admin-pagination button:not(:disabled):hover { background: #475569; }
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+.modal {
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 28px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal h2 { font-size: 18px; font-weight: 700; margin-bottom: 20px; color: white; }
+.modal-field { margin-bottom: 14px; }
+.modal-field label { display: block; font-size: 13px; color: #94A3B8; margin-bottom: 6px; }
+.modal-field input,
+.modal-field select,
+.modal-field textarea {
+  width: 100%;
+  background: #0F172A;
+  border: 1px solid #334155;
+  color: #E2E8F0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+.modal-field input:focus,
+.modal-field select:focus,
+.modal-field textarea:focus { border-color: #00A651; }
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+/* Admin only dark surfaces */
+.admin-card,
+.modal,
+.modal-overlay {
+  color: #F8FAFC;
+}
+.modal {
+  background: #111827 !important;
+  border-color: #1F2937 !important;
+}
+.modal-field input,
+.modal-field select,
+.modal-field textarea {
+  background: #0B1120 !important;
+  color: #F9FAFB !important;
+  border-color: #374151 !important;
+}

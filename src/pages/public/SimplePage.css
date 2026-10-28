@@ -1,0 +1,83 @@
+.page-hero {
+  background: linear-gradient(135deg, #E8F8EF 0%, #FFFFFF 100%);
+  padding: 64px 0 48px;
+}
+.page-hero h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  max-width: 800px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.page-hero__sub {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+.section { padding: 64px 0; }
+.section-title { font-size: 28px; font-weight: 700; margin-bottom: 32px; }
+.cards-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.cards-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+.form-stack { display: flex; flex-direction: column; gap: 16px; }
+.success-box {
+  text-align: center;
+  padding: 48px;
+  background: var(--primary-light);
+  border-radius: var(--radius-lg);
+}
+.success-box h2 { color: var(--primary); margin-bottom: 8px; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  color: var(--text);
+}
+.faq-a {
+  padding: 0 0 18px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.news-list { display: flex; flex-direction: column; gap: 16px; }
+.news-date { font-size: 13px; color: var(--text-muted); }
+.news-card h3 { font-size: 18px; font-weight: 600; margin: 8px 0; }
+.badge-active {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.stock-card h3 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+
+.legal-content {
+  max-width: 720px;
+  line-height: 1.7;
+}
+.legal-content h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+}
+.legal-content p {
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}

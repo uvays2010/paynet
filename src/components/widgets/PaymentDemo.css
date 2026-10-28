@@ -1,0 +1,144 @@
+.pay-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #00A651, #10B981);
+  color: #ffffff !important;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 166, 81, 0.3);
+}
+
+/* Portal — hero CSS ta’sir qilmaydi */
+.pay-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(15, 23, 42, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pay-modal-box {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 24px;
+  padding: 28px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.pay-modal-box__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  color: #334155 !important;
+  line-height: 0;
+}
+
+.pay-modal-box__title {
+  margin: 0 0 6px !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  text-shadow: none !important;
+}
+
+.pay-modal-box__sub {
+  margin: 0 0 20px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+  text-shadow: none !important;
+  max-width: none !important;
+  opacity: 1 !important;
+}
+
+.pay-modal-box__label {
+  display: block !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  margin: 14px 0 6px !important;
+  color: #1e293b !important;
+  text-shadow: none !important;
+}
+
+.pay-modal-box__input {
+  width: 100% !important;
+  padding: 12px 14px !important;
+  border-radius: 12px !important;
+  border: 1.5px solid #cbd5e1 !important;
+  font-size: 15px !important;
+  box-sizing: border-box !important;
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.pay-modal-box__cta {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00A651, #059669);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.pay-modal-box__back {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: #475569 !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pay-modal-box__text {
+  color: #0f172a !important;
+  margin: 0 0 6px !important;
+  text-shadow: none !important;
+}
+
+.pay-modal-box__muted {
+  color: #475569 !important;
+  margin: 0 0 8px !important;
+  text-shadow: none !important;
+  max-width: none !important;
+  opacity: 1 !important;
+}
+
+.pay-modal-box__sum {
+  font-size: 26px !important;
+  font-weight: 800 !important;
+  color: #00A651 !important;
+  margin: 0 0 16px !important;
+  text-shadow: none !important;
+}
+
+.pay-modal-box__ok {
+  color: #0f172a !important;
+  margin: 12px 0 8px !important;
+  font-size: 20px !important;
+  text-shadow: none !important;
+}
+
+.pay-modal-box__body--center {
+  text-align: center;
+}
